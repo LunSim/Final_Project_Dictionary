@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="330dp"
+    android:background="@drawable/radiusbg"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:background="@drawable/circleclose"
+            android:gravity="center"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/khmer_dic"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#12185F"
+            android:layout_marginTop="37dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khmer Dictionary"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#333"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/version_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:textSize="19dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
